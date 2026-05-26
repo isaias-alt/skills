@@ -33,13 +33,9 @@ The skill does not trigger for decisions that are local, easily reversible, and 
 
 ## Output
 
-A markdown file at `<project-root>/decisions/YYYY-MM-DD-<slug>.md` containing context, the decision, alternatives rejected, trade-offs accepted, assumptions with revisit conditions, sub-decisions (light treatment), weak points flagged at the end of the session, deferred items, and references. The decision log is written in the language the user used during the session.
+A markdown file at `<project-root>/decisions/YYYY-MM-DD-<slug>.md` containing context, the decision, alternatives rejected, trade-offs accepted, assumptions with revisit conditions, sub-decisions (light treatment), weak points flagged at the end of the session, deferred items, and references.
 
 If a file with the same name already exists, the skill stops and asks how to proceed.
-
-## Installation
-
-Install via the `.skill` package: place the unpacked folder in your skills directory, or use your client's skill installation flow.
 
 ## Credit and prior art
 
