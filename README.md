@@ -1,42 +1,25 @@
-# skills
+# Skills
 
-A collection of [agent skills](https://www.skills.sh/) for AI coding agents (Claude Code, Cursor, Codex, and others).
+[![skills.sh](https://skills.sh/b/isaias-alt/skills)](https://skills.sh/isaias-alt/skills)
 
-## Installation
+Agent skills for AI coding agents, focused on thinking through technical decisions before writing code.
 
-Install any skill in this collection with the [`skills` CLI](https://www.skills.sh/docs/cli):
+## Quickstart
+
+Run the skills.sh installer:
 
 ```bash
-npx skills add isaias-alt/skills
+npx skills@latest add isaias-alt/skills
 ```
 
-This downloads the skills and configures them for your agent. No npm package, no global install: the CLI reads this repository directly.
+Pick the skills you want and the agents to install them on.
 
-To install into a specific project, run the command from that project's root. To install globally, follow your agent's convention for global skills (for Claude Code, that is `~/.claude/skills/`).
+## socratic-duck
 
-## Skills in this collection
+Get relentlessly interrogated about a single technical decision to expose flaws, assumptions, and trade-offs, then write a decision log to `decisions/`.
 
-### socratic-duck
-
-A confrontational variant of rubber-duck debugging. It interrogates you about a single technical decision to expose flaws, hidden assumptions, and unresolved trade-offs before any code is written, then writes a decision log to `decisions/` in your project root.
-
-**This skill is deliberately confrontational.** It does not validate your plan; it tries to break it. See [`socratic-duck/README.md`](./socratic-duck/README.md) for the full behavior description and the warning before you install.
-
-## Repository structure
-
-Each skill lives in its own directory at the repository root, following the layout expected by the `skills` CLI:
-
-```
-skills/
-├── README.md              (this file: describes the collection)
-└── socratic-duck/
-    ├── SKILL.md           (the skill itself)
-    ├── README.md          (skill-specific docs and warnings)
-    └── examples/          (sample output)
-```
-
-New skills are added as sibling directories over time.
+This skill is deliberately confrontational: it tries to break your plan, not validate it. Read [`socratic-duck/README.md`](./socratic-duck/README.md) before installing.
 
 ## License
 
-See [LICENSE](./LICENSE).
+[MIT](./LICENSE).
